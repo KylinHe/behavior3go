@@ -1,7 +1,6 @@
 package decorators
 
 import (
-	"fmt"
 	b3 "github.com/KylinHe/behavior3go"
 	. "github.com/KylinHe/behavior3go/config"
 	. "github.com/KylinHe/behavior3go/core"
