@@ -1,9 +1,9 @@
 package decorators
 
 import (
-	b3 "github.com/magicsea/behavior3go"
-	. "github.com/magicsea/behavior3go/config"
-	. "github.com/magicsea/behavior3go/core"
+	b3 "github.com/KylinHe/behavior3go"
+	. "github.com/KylinHe/behavior3go/config"
+	. "github.com/KylinHe/behavior3go/core"
 )
 
 /**

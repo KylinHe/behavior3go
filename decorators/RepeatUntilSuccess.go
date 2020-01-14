@@ -1,9 +1,9 @@
 package decorators
 
 import (
-	b3 "github.com/magicsea/behavior3go"
-	. "github.com/magicsea/behavior3go/config"
-	. "github.com/magicsea/behavior3go/core"
+	b3 "github.com/KylinHe/behavior3go"
+	. "github.com/KylinHe/behavior3go/config"
+	. "github.com/KylinHe/behavior3go/core"
 )
 
 /**
@@ -47,7 +47,7 @@ func (this *RepeatUntilSuccess) Initialize(setting *BTNodeCfg) {
  * @param {Tick} tick A tick instance.
 **/
 func (this *RepeatUntilSuccess) OnOpen(tick *Tick) {
-	tick.Blackboard.Set("i", 0, tick.GetTree().GetID(), this.GetID())
+	//tick.Blackboard.Set("i", 0, tick.GetTree().GetID(), this.GetID())
 }
 
 /**

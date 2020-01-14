@@ -3,8 +3,8 @@ package core
 import (
 	"fmt"
 
-	b3 "github.com/magicsea/behavior3go"
-	"github.com/magicsea/behavior3go/config"
+	b3 "github.com/KylinHe/behavior3go"
+	"github.com/KylinHe/behavior3go/config"
 )
 
 /**
@@ -138,6 +138,12 @@ func (this *BehaviorTree) Initialize() {
 func (this *BehaviorTree) GetID() string {
 	return this.id
 }
+
+
+func (this *BehaviorTree) GetName() string {
+	return this.dumpInfo.ID
+}
+
 
 func (this *BehaviorTree) SetDebug(debug interface{}) {
 	this.debug = debug

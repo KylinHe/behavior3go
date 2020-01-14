@@ -1,10 +1,10 @@
 package decorators
 
 import (
-
-	b3 "github.com/magicsea/behavior3go"
-	. "github.com/magicsea/behavior3go/config"
-	. "github.com/magicsea/behavior3go/core"
+	"fmt"
+	b3 "github.com/KylinHe/behavior3go"
+	. "github.com/KylinHe/behavior3go/config"
+	. "github.com/KylinHe/behavior3go/core"
 )
 
 /**
@@ -47,7 +47,7 @@ func (this *Repeater) Initialize(setting *BTNodeCfg) {
  * @param {Tick} tick A tick instance.
 **/
 func (this *Repeater) OnOpen(tick *Tick) {
-	tick.Blackboard.Set("i", 0, tick.GetTree().GetID(), this.GetID())
+	//tick.Blackboard.Set("i", 0, tick.GetTree().GetID(), this.GetID())
 }
 
 /**
@@ -71,6 +71,6 @@ func (this *Repeater) OnTick(tick *Tick) b3.Status {
 			break
 		}
 	}
-	tick.Blackboard.Set("i", i, tick.GetTree().GetID(), this.GetID())
+	tick.Blackboard.Set("i", i + 0, tick.GetTree().GetID(), this.GetID())
 	return status
 }
